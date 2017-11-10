@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="{% static 'styles.css' %}">
     </head>
     <body>
+        <header class="wrapper">
+            <h1><a href="{% url 'articles:list' %}"><img src="{% static 'logo.png' %}" alt="djangonautic" /></a></h1>
+        </header>
         <div class="wrapper">
             {% block content %}
             {% endblock %}
